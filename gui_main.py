@@ -14,6 +14,9 @@ from gui_form_levels import FormMenuLevels
 from gui_form_settings import FormMenuSettings
 from gui_form_game_over import FormGameOver
 from gui_form_game_complete import FormGameComplete
+from gui_form_menu_pause_l1 import FormPauseL1
+from gui_form_menu_pause_l2 import FormPauseL2
+from gui_form_menu_pause_l3 import FormPauseL3
 
 
 flags = DOUBLEBUF 
@@ -40,6 +43,9 @@ form_game_L3 = FormGameLevel3(name="form_game_L3",master_surface = screen,x=0,y=
 
 form_game_over = FormGameOver(name="form_game_over",master_surface=screen,x=150,y=50,w=700,h=600,color_background="black",color_border=None,active=False)
 form_game_complete = FormGameComplete(name="form_game_complete",master_surface=screen,x=150,y=50,w=700,h=600,color_background="black",color_border=None,active=False)
+form_pause_l1 = FormPauseL1(name="form_pause_lvl1",master_surface=screen,x=150,y=50,w=700,h=600,color_background="black",color_border=None,active=False)
+form_pause_l2 = FormPauseL2(name="form_pause_lvl2",master_surface=screen,x=150,y=50,w=700,h=600,color_background="black",color_border=None,active=False)
+form_pause_l3 = FormPauseL3(name="form_pause_lvl3",master_surface=screen,x=150,y=50,w=700,h=600,color_background="black",color_border=None,active=False)
 pygame.init()
 
 while True:
